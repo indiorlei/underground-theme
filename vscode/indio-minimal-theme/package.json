@@ -1,0 +1,36 @@
+{
+  "name": "indio-minimal-theme",
+  "publisher": "indiorlei",
+  "displayName": "Indio Minimal",
+  "description": "A refined minimalist theme that comes in dark and light. Works on VS Code and Kiro IDE.",
+  "version": "1.1.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Themes"],
+  "keywords": ["dark", "light", "minimal", "minimalist", "theme"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Indio Minimal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/indio-minimal-color-theme.json"
+      },
+      {
+        "label": "Indio Minimal Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/indio-minimal-dark-color-theme.json"
+      },
+      {
+        "label": "Indio Minimal Light",
+        "uiTheme": "vs",
+        "path": "./themes/indio-minimal-light-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT"
+}
