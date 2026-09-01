@@ -43,4 +43,4 @@ Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE) © Indio Orlei
+[MIT](LICENSE) © Indiorlei
