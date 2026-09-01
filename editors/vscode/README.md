@@ -49,10 +49,10 @@ A refined minimalist dark theme for VS Code and Kiro IDE. Low-contrast, distract
 
 ```bash
 # VS Code
-ln -s ~/projects/minimal-theme/editors/vscode ~/.vscode/extensions/underground-theme
+ln -s ~/projects/underground-theme/editors/vscode ~/.vscode/extensions/underground-theme
 
 # Kiro IDE
-ln -s ~/projects/minimal-theme/editors/vscode ~/.kiro/extensions/underground-theme
+ln -s ~/projects/underground-theme/editors/vscode ~/.kiro/extensions/underground-theme
 ```
 
 ## Recommended Settings

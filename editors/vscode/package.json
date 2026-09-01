@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/indiorlei/minimal-theme.git",
+    "url": "https://github.com/indiorlei/underground-theme.git",
     "directory": "editors/vscode"
   },
   "bugs": {
-    "url": "https://github.com/indiorlei/minimal-theme/issues"
+    "url": "https://github.com/indiorlei/underground-theme/issues"
   },
-  "homepage": "https://github.com/indiorlei/minimal-theme#readme",
+  "homepage": "https://github.com/indiorlei/underground-theme#readme",
   "license": "MIT"
 }
