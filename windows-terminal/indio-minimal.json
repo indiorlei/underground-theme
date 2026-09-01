@@ -1,0 +1,26 @@
+{
+  "name": "Indio Minimal",
+
+  "background": "#222222",
+  "foreground": "#D4D4D4",
+  "cursorColor": "#9BD4B2",
+  "selectionBackground": "#353535",
+
+  "black": "#1A1A1A",
+  "red": "#E29090",
+  "green": "#9BD4B2",
+  "yellow": "#D4A07A",
+  "blue": "#90AED3",
+  "purple": "#CEB0D3",
+  "cyan": "#8ABEB7",
+  "white": "#D4D4D4",
+
+  "brightBlack": "#6A6A6A",
+  "brightRed": "#E29090",
+  "brightGreen": "#9BD4B2",
+  "brightYellow": "#D4A07A",
+  "brightBlue": "#90AED3",
+  "brightPurple": "#CEB0D3",
+  "brightCyan": "#8ABEB7",
+  "brightWhite": "#FFFFFF"
+}
