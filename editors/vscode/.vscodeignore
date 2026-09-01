@@ -1,0 +1,15 @@
+# Files excluded from the packaged .vsix
+
+.gitignore
+.vscode/**
+.vscode-test/**
+
+# Source images kept in repo but not needed at runtime beyond the icon/preview
+# (keep images/ so the README preview and icon are bundled)
+
+# Dev/meta files
+**/*.map
+**/tsconfig.json
+**/.eslintrc*
+node_modules/**
+*.tgz

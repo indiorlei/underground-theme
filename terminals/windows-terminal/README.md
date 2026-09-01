@@ -1,7 +1,7 @@
-# Indio Minimal — Windows Terminal
+# Underground — Windows Terminal
 
 A color scheme for **Windows Terminal** (PowerShell, CMD, WSL) matching the
-[Indio Minimal](../vscode/indio-minimal-theme) VS Code theme.
+[Underground](../../editors/vscode) VS Code theme.
 
 ## Palette
 
@@ -29,7 +29,7 @@ Bright variants share the same hues; `brightBlack` is `#6A6A6A` and
 
 1. Open Windows Terminal → `Ctrl+,` (or dropdown → **Settings**).
 2. In the left panel, scroll to **Color schemes** → **Add new**.
-3. Enter the values from `indio-minimal.json` (or use the JSON method below).
+3. Enter the values from `underground.json` (or use the JSON method below).
 
 ### Via settings.json (recommended)
 
@@ -38,12 +38,12 @@ Bright variants share the same hues; `brightBlack` is `#6A6A6A` and
    ```
    %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
    ```
-2. Copy the object from `indio-minimal.json` into the top-level `"schemes"` array:
+2. Copy the object from `underground.json` into the top-level `"schemes"` array:
    ```json
    {
      "schemes": [
        {
-         "name": "Indio Minimal",
+         "name": "Underground",
          "background": "#222222",
          "foreground": "#D4D4D4",
          "cursorColor": "#9BD4B2",
@@ -68,7 +68,7 @@ Bright variants share the same hues; `brightBlack` is `#6A6A6A` and
      ]
    }
    ```
-3. Apply it to a profile by setting `"colorScheme": "Indio Minimal"` inside that
+3. Apply it to a profile by setting `"colorScheme": "Underground"` inside that
    profile, or under `"profiles": { "defaults": { ... } }` to apply everywhere.
 4. Save. Windows Terminal reloads automatically.
 
@@ -78,7 +78,7 @@ Bright variants share the same hues; `brightBlack` is `#6A6A6A` and
 {
   "profiles": {
     "defaults": {
-      "colorScheme": "Indio Minimal",
+      "colorScheme": "Underground",
       "font": {
         "face": "JetBrains Mono",
         "size": 11
