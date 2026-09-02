@@ -28,8 +28,11 @@
     "diffEditor.insertedTextBackground": "#b5bd6861",
     "diffEditor.removedTextBackground": "#e2909061",
 
-    "diffEditor.insertedLineBackground": "#9bd4b215",
+    "diffEditor.insertedLineBackground": "#b5bd6815",
     "diffEditor.removedLineBackground": "#e2909015",
+
+    "diffEditor.border": "#2e2e2e",
+    "diffEditor.diagonalFill": "#2e2e2e",
 
     "dropdown.background": "#272727",
     "dropdown.border": "#222222",
@@ -157,6 +160,21 @@
     "listFilterWidget.background": "#272727",
     "listFilterWidget.noMatchesOutline": "#e29090",
     "listFilterWidget.outline": "#81a2be",
+
+    "merge.currentHeaderBackground": "#9bd4b233",
+    "merge.currentContentBackground": "#9bd4b21a",
+    "merge.incomingHeaderBackground": "#81a2be33",
+    "merge.incomingContentBackground": "#81a2be1a",
+    "merge.commonHeaderBackground": "#3a3a3a",
+    "merge.commonContentBackground": "#2c2c2c",
+    "merge.border": "#2e2e2e",
+
+    "mergeEditor.change.background": "#9bd4b21a",
+    "mergeEditor.change.word.background": "#9bd4b233",
+    "mergeEditor.conflict.unhandledUnfocused.border": "#f7df9b66",
+    "mergeEditor.conflict.unhandledFocused.border": "#f7df9b",
+    "mergeEditor.conflict.handledUnfocused.border": "#3a3a3a",
+    "mergeEditor.conflict.handledFocused.border": "#6a6a6a",
 
     "minimap.findMatchHighlight": "#81a2be80",
     "minimap.selectionHighlight": "#ffffffde",

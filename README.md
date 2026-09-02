@@ -41,6 +41,12 @@ artifacts.
 
 Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Changelog
+
+Project-wide history is in [CHANGELOG.md](CHANGELOG.md). The VS Code extension
+also keeps a marketplace-facing changelog at
+[`editors/vscode/CHANGELOG.md`](editors/vscode/CHANGELOG.md).
+
 ## License
 
 [MIT](LICENSE) © Indiorlei

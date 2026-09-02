@@ -61,6 +61,33 @@ Colors actually applied to code in the editor:
 | Git modified | `#9bd4b2` | 🟢 |
 | Git deleted | `#e29090` | 🔴 |
 
+### Diff & merge
+
+The diff editor tints added/removed content with the git colors above, at low
+alpha so the background stays calm. Line-level highlights are subtler than
+word-level ones:
+
+| Role | Hex | Where |
+|------|-----|-------|
+| Inserted text (word) | `#b5bd6861` | `diffEditor.insertedTextBackground` |
+| Inserted line | `#b5bd6815` | `diffEditor.insertedLineBackground` |
+| Removed text (word) | `#e2909061` | `diffEditor.removedTextBackground` |
+| Removed line | `#e2909015` | `diffEditor.removedLineBackground` |
+| Diff border / diagonal fill | `#2e2e2e` | `diffEditor.border`, `diffEditor.diagonalFill` |
+
+Merge conflicts reuse the palette semantically — **current** (local) uses the
+green accent, **incoming** uses info blue, **common** (base) stays neutral
+gray, and unresolved conflict borders use the warning yellow:
+
+| Role | Hex | Where |
+|------|-----|-------|
+| Current header / content | `#9bd4b233` / `#9bd4b21a` | `merge.current*Background` |
+| Incoming header / content | `#81a2be33` / `#81a2be1a` | `merge.incoming*Background` |
+| Common header / content | `#3a3a3a` / `#2c2c2c` | `merge.common*Background` |
+| Merge border | `#2e2e2e` | `merge.border` |
+| Conflict border (unhandled) | `#f7df9b` / `#f7df9b66` | `mergeEditor.conflict.unhandled*.border` |
+| Conflict border (handled) | `#6a6a6a` / `#3a3a3a` | `mergeEditor.conflict.handled*.border` |
+
 ### Input validation
 
 Validation messages use a dark tonal background with the accent color on the

@@ -5,6 +5,25 @@ All notable changes to the **Underground** theme are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-09-02
+
+### Added
+- Merge conflict colors (`merge.*`, `mergeEditor.*`), previously unset and
+  falling back to VS Code's saturated defaults. Now derived from the palette:
+  current uses the green accent, incoming the info blue, common a neutral gray,
+  and unresolved conflict borders the warning yellow.
+- Diff editor border and diagonal fill (`diffEditor.border`,
+  `diffEditor.diagonalFill`), set to `#2e2e2e` so the diff chrome matches the
+  low-contrast theme instead of the editor default.
+
+### Fixed
+- Diff inserted-line background used the "git modified" green (`#9bd4b2`) instead
+  of the "git added" green (`#b5bd68`); aligned with the palette so inserted text
+  and inserted lines share the same hue.
+
+### Changed
+- Documented all diff and merge colors in `PALETTE.md`.
+
 ## [1.1.1] - 2026-09-02
 
 ### Fixed
