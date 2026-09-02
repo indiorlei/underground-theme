@@ -34,26 +34,70 @@ A refined minimalist dark theme for VS Code and Kiro IDE. Low-contrast, distract
 
 ## Installation
 
-### VS Code / Kiro IDE
+This theme is distributed through GitHub (it is not on the Marketplace). Pick
+whichever option suits you — they all end with the same result.
 
-1. Copy this folder to your extensions directory:
-   - **macOS**: `~/.vscode/extensions/` or `~/.kiro/extensions/`
-   - **Linux**: `~/.vscode/extensions/` or `~/.kiro/extensions/`
-   - **Windows**: `%USERPROFILE%\.vscode\extensions\` or `%USERPROFILE%\.kiro\extensions\`
+After installing by any method, select the theme:
+**Command Palette** (`Ctrl+Shift+P` / `Cmd+Shift+P`) →
+`Preferences: Color Theme` → **Underground**.
 
-2. Restart VS Code / Kiro IDE
+### Option 1 — Install from a `.vsix` file (recommended)
 
-3. Open Command Palette (`Cmd+Shift+P`) → "Preferences: Color Theme" → Select **Underground**
+The easiest way. A packaged `.vsix` is attached to each
+[GitHub Release](https://github.com/indiorlei/underground-theme/releases).
 
-### Alternative: Symlink (for development)
+1. Download the latest `underground-theme-<version>.vsix` from the Releases page.
+2. In VS Code / Kiro IDE, open the **Extensions** view (`Ctrl+Shift+X`).
+3. Click the `⋯` menu (top-right of the panel) → **Install from VSIX…**
+4. Select the downloaded file.
+
+Or from the command line:
+
+```bash
+code --install-extension underground-theme-<version>.vsix
+```
+
+> Note: `.vsix` installs do not auto-update. To update, download the newer
+> `.vsix` and install it again.
+
+### Option 2 — Copy the folder into your extensions directory
+
+Clone (or download) this repository, then copy the `editors/vscode` folder into
+your editor's extensions directory:
+
+- **Windows**: `%USERPROFILE%\.vscode\extensions\` or `%USERPROFILE%\.kiro\extensions\`
+- **macOS / Linux**: `~/.vscode/extensions/` or `~/.kiro/extensions/`
+
+```bash
+git clone https://github.com/indiorlei/underground-theme.git
+# Windows (PowerShell)
+Copy-Item -Recurse underground-theme/editors/vscode "$env:USERPROFILE/.vscode/extensions/underground-theme"
+# macOS / Linux
+cp -r underground-theme/editors/vscode ~/.vscode/extensions/underground-theme
+```
+
+Then restart VS Code / Kiro IDE.
+
+### Option 3 — Symlink (best for development)
+
+If you plan to tweak the theme, symlink the folder so your edits are picked up
+without copying:
 
 ```bash
 # VS Code
-ln -s ~/projects/underground-theme/editors/vscode ~/.vscode/extensions/underground-theme
+ln -s "$(pwd)/underground-theme/editors/vscode" ~/.vscode/extensions/underground-theme
 
 # Kiro IDE
-ln -s ~/projects/underground-theme/editors/vscode ~/.kiro/extensions/underground-theme
+ln -s "$(pwd)/underground-theme/editors/vscode" ~/.kiro/extensions/underground-theme
 ```
+
+On Windows (PowerShell, as administrator):
+
+```powershell
+New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE/.vscode/extensions/underground-theme" -Target "$(Get-Location)/underground-theme/editors/vscode"
+```
+
+Then restart the editor.
 
 ## Recommended Settings
 
