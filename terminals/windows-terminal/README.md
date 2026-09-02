@@ -14,7 +14,7 @@ A color scheme for **Windows Terminal** (PowerShell, CMD, WSL) matching the
 | Black             | `#1A1A1A` |
 | Red               | `#E29090` |
 | Green             | `#9BD4B2` |
-| Yellow            | `#D4A07A` |
+| Yellow            | `#F7DF9B` |
 | Blue              | `#90AED3` |
 | Purple / Magenta  | `#CEB0D3` |
 | Cyan              | `#8ABEB7` |
@@ -51,7 +51,7 @@ Bright variants share the same hues; `brightBlack` is `#6A6A6A` and
          "black": "#1A1A1A",
          "red": "#E29090",
          "green": "#9BD4B2",
-         "yellow": "#D4A07A",
+         "yellow": "#F7DF9B",
          "blue": "#90AED3",
          "purple": "#CEB0D3",
          "cyan": "#8ABEB7",
@@ -59,7 +59,7 @@ Bright variants share the same hues; `brightBlack` is `#6A6A6A` and
          "brightBlack": "#6A6A6A",
          "brightRed": "#E29090",
          "brightGreen": "#9BD4B2",
-         "brightYellow": "#D4A07A",
+         "brightYellow": "#F7DF9B",
          "brightBlue": "#90AED3",
          "brightPurple": "#CEB0D3",
          "brightCyan": "#8ABEB7",

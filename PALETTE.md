@@ -18,13 +18,14 @@ and propagate it to the other artifacts. Note the change in the relevant
 | Background | `#222222` | `editor.background`, panels, sidebar, tabs |
 | Surface (raised) | `#272727` | inputs, status bar, active tab, widgets |
 | Surface (hover/drop) | `#2e2e2e` | hover, selected suggest, drop target |
-| Selection / find match | `#353535` | `editor.selectionBackground`, `editor.findMatchBackground` |
+| Selection / find match | `#2c3a30` (selection), `#353535` (find match) | `editor.selectionBackground`, `editor.findMatchBackground` |
 | Deep black | `#1a1a1a` | terminal `ansiBlack` |
 | Foreground | `#ffffffde` | primary text (white, ~87% alpha) |
 | Foreground (muted) | `#ffffff99` | secondary text (~60% alpha) |
 | Foreground (subtle) | `#ffffff61` | tertiary text (~38% alpha) |
 | Comment / bright black | `#6a6a6a` | comments, `ansiBrightBlack` |
-| Line numbers | `#333333` | `editorLineNumber.foreground` |
+| Line numbers | `#5a5a5a` (inactive), `#ffffffde` (active) | `editorLineNumber.foreground`, `editorLineNumber.activeForeground` |
+| Focus border | `#3a3a3a` | `focusBorder` (keyboard nav) |
 | Cursor | `#ffffffde` | `editorCursor.foreground` |
 | Green accent | `#9bd4b2` | active borders (`panelTitle.activeBorder`), git modified |
 
@@ -60,6 +61,17 @@ Colors actually applied to code in the editor:
 | Git modified | `#9bd4b2` | 🟢 |
 | Git deleted | `#e29090` | 🔴 |
 
+### Input validation
+
+Validation messages use a dark tonal background with the accent color on the
+border only (keeps the message text readable):
+
+| Role | Background | Border |
+|------|-----------|--------|
+| Error | `#2e2222` | `#e29090` |
+| Warning | `#2e2b22` | `#f7df9b` |
+| Info | `#22282e` | `#81a2be` |
+
 ## Terminal ANSI colors
 
 Source for the Windows Terminal scheme
@@ -71,7 +83,7 @@ keys in the VS Code theme.
 | Black | `#1a1a1a` | `#6a6a6a` |
 | Red | `#e29090` | `#e29090` |
 | Green | `#9bd4b2` | `#9bd4b2` |
-| Yellow | `#d4a07a` | `#d4a07a` |
+| Yellow | `#f7df9b` | `#f7df9b` |
 | Blue | `#90aed3` | `#90aed3` |
 | Magenta / Purple | `#ceb0d3` | `#ceb0d3` |
 | Cyan | `#8abeb7` | `#8abeb7` |
@@ -82,8 +94,9 @@ Bright variants share the hue of their normal counterpart, except
 `brightWhite` to `#ffffff` and uses `#222222` as its background to match the
 editor chrome.
 
-> **Note:** `#8abeb7` (cyan) and `#d4a07a` (warm yellow/orange) currently appear
-> only in the terminal ANSI set, not in the editor's syntax tokens.
+> **Note:** `#8abeb7` (cyan) appears only in the terminal ANSI set, not in the
+> editor's syntax tokens. The ANSI yellow uses `#f7df9b`, the same warm yellow as
+> the editor's warning color, keeping a single yellow across the theme.
 
 ## Where each color lives
 
